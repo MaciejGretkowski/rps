@@ -73,5 +73,5 @@ function gameLogic() {
 // Quick testing the logic
 // console.log(determineWinner("S", "R") + " " + computerScore + " " + userScore);
 for (let i = 0; i <= 4; i++) {
-    gameLogic();
+    console.log(gameLogic());
 }
