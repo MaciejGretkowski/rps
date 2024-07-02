@@ -59,15 +59,10 @@ function determineWinner(userChoice, computerChoice) {
     }
 }
 
-function gameLogic() {
-    gameContinue = prompt("Do you want to play the game? /nType in 'Y' for Yes or 'N' for No");
-    if (gameContinue === "N") {
-        return(`Computer score is: ${computerScore}, your score is: ${userScore}`);
-    } else {
-        getComputerChoice();
-        getUserChoice();
-        return determineWinner(userChoice, computerChoice);
-    }
+function gameLogic() {;
+    getComputerChoice();
+    getUserChoice();
+    return (determineWinner(userChoice, computerChoice) + ` Computer score is: ${computerScore}, your score is: ${userScore}`);
 }
 
 // Quick testing the logic
